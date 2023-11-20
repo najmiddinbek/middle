@@ -5,6 +5,7 @@ import { BsChevronDown, BsChevronUp } from "react-icons/bs"
 import Link from "next/link"
 import Navbar from '../../../components/Navbar';
 import RemoveBtn from '../../../components/RemoveBtn';
+import Tahrirlash from "../../../components/Tahrirlash"
 import { HiPencilAlt } from "react-icons/hi";
 
 const getTopics = async () => {
@@ -174,8 +175,8 @@ const Filter = () => {
                                             <td className="px-2 py-4 admin_panel_td">{t.newDarsQoldirish}</td>
                                             <td className=''>
                                                 <RemoveBtn id={t._id} />
+                                                <Tahrirlash id={t._id} />
                                             </td>
-
                                         </tr>
                                     </tbody>
                                 ))}

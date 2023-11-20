@@ -420,7 +420,7 @@ export default function LoginForm() {
       });
       return;
     }
-    if (email === "Ulug`xo`jayeva Chinixon" && password === "chinixon108") {
+    if (email === "Chinixon" && password === "chinixon108") {
       router.replace("/pupilsAdd");
       toast.success(`Xush kelibsiz ${email}`, {
         position: "top-right",
