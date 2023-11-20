@@ -172,8 +172,8 @@ const PupilsAddClient = () => {
                             setManzili={setManzili}
                             setTelefoni={setTelephoneRaqami}
                         />
-                        <label className="text-[18px] poppins font-bold" htmlFor="">MFY tanlang</label>
-                        <select className="px-2 py-3 cursor-no-drop" onChange={(e) => setMFY(e.target.value)} value={MFY}>
+                        <label className="text-[18px] poppins font-bold" htmlFor="">Sektor tanlang</label>
+                        <select className="px-2 py-3 cursor-no-drop border" onChange={(e) => setMFY(e.target.value)} value={MFY}>
                             <option>Ma`lumot yo`q</option>
                         </select>
                         <label className="text-[18px] font-bold poppins" htmlFor="">
