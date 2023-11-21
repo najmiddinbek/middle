@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/Navbar';
+import Diagramma from "../../components/Diagrammalar/Diagramma"
+import Chiziqli from "../../components/Diagrammalar/Chiziqli"
 
 const getTopics = async () => {
     try {
@@ -283,7 +285,6 @@ const Filter = () => {
         fetchData();
     }, []);
 
-    // Helper function to find the most frequent item in an object
     const findMostFrequent = (counts) => {
         let maxCount = 0;
         let mostFrequent = '';
@@ -301,6 +302,8 @@ const Filter = () => {
         <>
             <div>
                 <Navbar />
+                <Diagramma />
+                <Chiziqli />
                 <div className="max-w-[1000px] mx-auto w-full">
                     <div className="flex flex-col justify-start w-full">
                         <h2 className="text-3xl poppins font-bold mb-2">Foizdagi o`zgarish</h2>
