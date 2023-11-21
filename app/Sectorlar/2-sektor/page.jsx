@@ -175,7 +175,6 @@ const Filter = () => {
                                             <td className="px-2 py-4 admin_panel_td">{t.newDarsQoldirish}</td>
                                             <td className=''>
                                                 <RemoveBtn id={t._id} />
-                                                <Tahrirlash id={t._id} />
                                             </td>
                                         </tr>
                                     </tbody>

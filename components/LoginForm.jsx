@@ -55,6 +55,20 @@ export default function LoginForm() {
       });
       return;
     }
+    if (email === "dashboard" && password === "dashboard") {
+      router.replace("/SuperAdmin");
+      toast.success(`Xush kelibsiz ${email}`, {
+        position: "top-right",
+        autoClose: 1000000000000000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      return;
+    }
     if (email === "Najmiddinova Nasiba" && password === "nasiba11") {
       router.replace("/pupilsAdd");
       toast.success(`Xush kelibsiz ${email}`, {
@@ -251,7 +265,7 @@ export default function LoginForm() {
       });
       return;
     }
-    if (email === "Ibrahimov Ma'murjon" && password === "mamurjon30") {
+    if (email === "Ibrahimov Ma`murjon" && password === "mamurjon30") {
       router.replace("/pupilsAdd");
       toast.success(`Xush kelibsiz ${email}`, {
         position: "top-right",

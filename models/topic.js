@@ -9,6 +9,10 @@ const topicSchema = new Schema(
     telephoneRaqami: String,
     newIsm: String,
     MFY: String,
+    organildi: {
+      type: Boolean,
+      default: false
+    }
   },
   {
     timestamps: true,
